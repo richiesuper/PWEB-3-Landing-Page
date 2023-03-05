@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="richiesuper">
+    <meta name="description" content="Simple landing page.">
+    <meta name="keywords" content="landing-page, web, digital, html, css">
+    <title>Vim Landing Page - Richie Seputro</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /*background: linear-gradient(to right, #ADFF2F, #ADFF8F, #7AA145, #44118F, #44112F);*/
+            background: linear-gradient(to right, #ADFF2F, #4411BF);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        h1:hover {
+            color: red;
+            font-size: 2.5rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            height: 100px;
+        }
+
+        nav > ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav > ul > li {
+            flex: 1;
+            text-align: center;
+            padding: 1rem 1rem;
+            font-size: 1.3rem
+        }
+
+        nav > ul > li > a:hover {
+            font-size: 1.75rem;
+            color: gold;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        img {
+            width: 15%;
+            transition-timing-function: ease-in;
+            transition-duration: 0.75s;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        .gt {
+            font-size: 25vw;
+        }
+
+        div.compare {
+            text-align: center;
+            transition-timing-function: ease-in;
+            transition-duration: 0.75s;
+        }
+
+        div.compare:hover {
+            transform: translateX(calc(-5%));
+        }
+
+        div.compare:hover img#vim {
+            width: 20%;
+            transform: translateY(calc(10%));
+        }
+
+        div.compare:hover img#vscode {
+            width: 10%;
+            transform: translateY(calc(-30%));
+        }
+
+        div.compare:hover + .persuation {
+            transform: translateY(50px);
+            opacity: 1.0;
+        }
+
+        .persuation {
+            font-size: 5vh;
+            text-align: center;
+            transform: translateY(-100px);
+            transition-timing-function: ease-out;
+            transition-duration: 0.75s;
+            opacity: 0.0;
+        }
+
+		footer.copyright {
+			text-align: center;
+            position: fixed;
+            bottom: 20px;
+            left: 45%;
+		}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Vim - Vi IMproved</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="compare">
+                <img id="vim" src="assets/images/Vimlogo.svg" alt="Vim logo">
+                <span class="gt">&gt;</span>
+                <img id="vscode" src="assets/images/vscode.svg" alt="Visual Studio Code logo">
+            </div>
+            <div class="persuation">
+                <div class="d1">Tired of using your old, crusty IDE?</div>
+                <div class="d2">Wanna switch to a fast, lightweight, and powerful text editor?</div>
+                <div class="d3">Vim is here for you!</div>
+            </div>
+        </main>
+        <footer class="copyright">
+            <!-- Copyright notice -->
+            &copy; 2023 Richie Seputro
+        </footer>
+    </div>
+</body>
+</html>
