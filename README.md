@@ -1,4 +1,4 @@
-# PWEB-2-Website-Berita
+# PWEB-3-Landing-Page
 
 Repository ini menampung tugas ketiga mata kuliah pemrograman web yang berupa
 landing page sederhana menggunakan HTML dan CSS milik:
